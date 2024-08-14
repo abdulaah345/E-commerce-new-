@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.offer-banner {
+   
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-banner::after {
+    content: '';
+    position: absolute;
+    top: -10%; /* لضمان أن العنصر يمتد للأعلى خارج الحاوية */
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background-color: #264653;
+    border-bottom-left-radius: 100%;
+    z-index: 1; /* طبقة أقل من offer-icon */
+}
+
+.logo .pho {
+    width: 273px;
+    margin-bottom: 90%;
+}
+
+.offer-details h1 {
+    margin-top: -21%;
+    font-size: 70px ;
+    margin-bottom: 35px;
+    font-family: "Limelight", sans-serif;
+    letter-spacing: 3px;
+
+
+}
+
+.offer-details h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: "Bangers", system-ui;
+    letter-spacing: 10px;
+    margin-left: -8%;
+}
+
+.offer-details p {
+    margin-left: -16%;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+}
+
+.offer-icon {
+    z-index: 2; /* لضمان أن offer-icon فوق العنصر المنحني */
+}
+
+.offer-icon img {
+    width: 400px;
+    margin-left: 5%;
+    margin-top: -48%;
+    z-index: 2; /* لضمان أن الصورة فوق العنصر المنحني */
+}
+
+@media (max-width: 767.98px) {
+    .offer-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo,
+    .offer-icon {
+        margin-bottom: 20px;
+    }
+}
