@@ -9,6 +9,7 @@ import Bag from './Component/Bag/Bag'
 import Cart from './Component/Cart/Cart'
 import Offer from './Component/Offer/Offer'
 import Truck from './Component/Truck/Truck'
+import { Fav } from './Component/Fav/Fav'
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
          < Route path="/cart" element={<Cart/>}/>
          < Route path="/offer" element={<Offer/>}/>
          < Route path="/truck" element={<Truck/>}/>
+         < Route path="/fav" element={<Fav/>}/>
+
 
         </Routes>
        

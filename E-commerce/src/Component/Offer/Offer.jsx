@@ -1,6 +1,7 @@
 import React from 'react'
 import logo5 from'./../../assets/image-removebg-preview (8) 1.png'
 import logo6 from'./../../assets/Group 58.png'
+import logo7 from'./../../assets/Group 76.png'
 import './../Offer/Offer.css'
 const Offer = () => {
   return (
@@ -17,7 +18,14 @@ const Offer = () => {
             <div className="offer-icon">
                 <img src={logo5} alt="Offer Icon" />
             </div>
+
         </div>
+        <div className='details-offer'>
+                <img src={logo7}/>
+            </div>
+       <div className='details-but'>
+                <button>Buy Now</button>
+            </div>
     </>
   )
 }

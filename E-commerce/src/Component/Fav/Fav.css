@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.offer-banner {
+.fav-banner {
    
     background-color: #ffffff;
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.offer-banner::after {
+.fav-banner::after {
     content: '';
     position: absolute;
     top: -10%; /* لضمان أن العنصر يمتد للأعلى خارج الحاوية */
@@ -22,7 +22,7 @@
     height: 350px;
     background-color: #264653;
     border-bottom-left-radius: 100%;
-    z-index: 1; /* طبقة أقل من offer-icon */
+    z-index: 1; /* طبقة أقل من fav-icon */
 }
 
 .logo .pho {
@@ -30,69 +30,84 @@
     margin-bottom: 90%;
 }
 
-.offer-details h1 {
+.fav-details h1 {
     margin-top: -21%;
     font-size: 70px ;
     margin-bottom: 35px;
     font-family: "Limelight", sans-serif;
     letter-spacing: 3px;
-
-
 }
 
-.offer-details h2 {
-    font-size: 45px;
-    margin-bottom: 10px;
-    font-family: "Bangers", system-ui;
-    letter-spacing: 10px;
-    margin-left: -8%;
+
+.fav-icon {
+    z-index: 2; /* لضمان أن fav-icon فوق العنصر المنحني */
 }
 
-.offer-details p {
-    margin-left: -16%;
-    width: 100%;
-    font-size: 30px;
-    font-family: "Kanit", sans-serif;
-}
-
-.offer-icon {
-    z-index: 2; /* لضمان أن offer-icon فوق العنصر المنحني */
-}
-
-.offer-icon img {
+.fav-icon img {
     width: 400px;
     margin-left: 5%;
     margin-top: -48%;
     z-index: 2; /* لضمان أن الصورة فوق العنصر المنحني */
 }
-.details-offer{
-    border-radius: 50%;
+.details-fav{
+    box-shadow: -20px 10px 8px rgba(0, 0, 0, 0.1),  20px 10px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: #fff;
+    width: 20%;
+    height: 55%;
+    border-radius: 30px;
     margin-top: -8%;
+}
+.details-fav img{
+    width:70%;
+    margin-left: 15%;
+}
+.details-fav p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30%;
     
 }
-.details-offer img{
-    width: 15%;
-    height: 15%;
+.details-fav h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 10%;
+    color: #CBCBCB;
 }
-.details-but button{
+.details-fav h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #CBCBCB;
+}
+.details-fav h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+    color: black;
+}
+.details-but-fav button{
     background-color:#264653 ;
     color: white;
     width: 100px;
     height: 40px;
     border-radius: 30px;
-    margin-left: 5%;
-    margin-top: 1%;
+    margin-left: 35%;
+    margin-top: 13%;
     cursor: pointer;
 
 }
 @media (max-width: 767.98px) {
-    .offer-banner {
+    .fav-banner {
         flex-direction: column;
         text-align: center;
     }
 
     .logo,
-    .offer-icon {
+    .fav-icon {
         margin-bottom: 20px;
     }
 }

@@ -1,0 +1,163 @@
+[
+  
+    {
+      "id": 1,
+      "name": "Book",
+      "price": 10.99,
+      "imgUrl": "/imgs/book.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Computer",
+      "price": 1199,
+      "imgUrl": "/imgs/computer.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Banana",
+      "price": 1.05,
+      "imgUrl": "/imgs/banana.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Car",
+      "price": 14000,
+      "imgUrl": "/imgs/car.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Slip Pumps",
+      "price": 200,
+      "imgUrl": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Ballet Flat",
+      "price": 50,
+      "imgUrl": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Loafer Flats",
+      "price": 50,
+      "imgUrl": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Zoom Freak",
+      "price": 200,
+      "imgUrl": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Men's Sneaker",
+      "price": 200,
+      "imgUrl": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg"
+    },
+    {
+      "id": 10,
+      "name": "BLACK-OCE",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Future Sneaker",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Adult Super",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Basic Sneaker",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Future Doubleknit",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Evo Golf",
+      "price": 100,
+      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Chex Skate",
+      "price": 100,
+      "imgUrl": "https://m.media-amazon.com/images/I/719gdz8lsTS._AC_UX575_.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Low-Top Trainers",
+      "price": 100,
+      "imgUrl": "https://m.media-amazon.com/images/I/71gpFHJlnoL._AC_UX575_.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Unisex Low-Top",
+      "price": 100,
+      "imgUrl": "https://m.media-amazon.com/images/I/71pf7VFs9CL._AC_UX575_.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Bandana Sneakers",
+      "price": 50,
+      "imgUrl": "https://m.media-amazon.com/images/I/61N4GyWcHPL._AC_UY575_.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Chunky Heel",
+      "price": 50,
+      "imgUrl": "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Stiletto Heel",
+      "price": 100,
+      "imgUrl": "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Court Shoes",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Block Heels",
+      "price": 200,
+      "imgUrl": "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg"
+    },
+    {
+      "id": 24,
+      "name": "High Heel",
+      "price": 50,
+      "imgUrl": "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Fashion Stilettos",
+      "price": 150,
+      "imgUrl": "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Sandals Glitter",
+      "price": 50,
+      "imgUrl": "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg"
+    }
+ 
+    
+    
+  ]
+  
