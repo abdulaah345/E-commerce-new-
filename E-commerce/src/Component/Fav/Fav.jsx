@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
-import './../Fav/Fav.css';
+import './Fav.css';
 import products from './../data/storeitem.json';
 
 export const Fav = () => {
@@ -26,9 +26,10 @@ export const Fav = () => {
                 </div>
             </div>
 
-            <Row md={2} xs={1} lg={2} className='g-3'>
+
+            <Row>
                 {items.map(item => (
-                    <Col key={item.id}>
+                    <Col key={item.id} lg={3} sm={6} md={4} >
                         <div className='details-fav'>
                             <img src={item.imgUrl} alt={item.name} />
                             <p>{item.name}</p>
@@ -39,7 +40,6 @@ export const Fav = () => {
                                 <button>Add To Cart</button>
                             </div>
                         </div>
-
                     </Col>
                 ))}
             </Row>
