@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
 import './../Fav/Fav.css';
 import products from './../data/storeitem.json';
+import { cartcontext } from '../Providorc';
 
 export const Fav = () => {
     const [items, setItems] = useState([]);
-
+  const {addtocart}=useContext(cartcontext);
+  
     useEffect(() => {
         setItems(products);
     }, []);
@@ -26,9 +28,9 @@ export const Fav = () => {
                 </div>
             </div>
 
-            <Row md={2} xs={1} lg={2} className='g-3'>
-                {items.map(item => (
-                    <Col key={item.id}>
+            <Row >
+                {items.map((item) => (
+                    <Col key={item.id} md={4} xs={6} lg={3} className='g-5'>
                         <div className='details-fav'>
                             <img src={item.imgUrl} alt={item.name} />
                             <p>{item.name}</p>
@@ -36,7 +38,7 @@ export const Fav = () => {
                             <h3>Price</h3>
                             <h4>${item.price}</h4>
                             <div className='details-but-fav'>
-                                <button>Add To Cart</button>
+                                <button onClick={()=>addtocart(item)}>Add To Cart</button>
                             </div>
                         </div>
 

@@ -10,13 +10,14 @@ import Cart from './Component/Cart/Cart'
 import Offer from './Component/Offer/Offer'
 import Truck from './Component/Truck/Truck'
 import { Fav } from './Component/Fav/Fav'
+import Providorc from './Component/Providorc'
 
 function App() {
 
   return (
     <Router>
 
-  
+<Providorc>
 <div className="app-container">
         <Sidebar />
         <div className="main-content">
@@ -33,6 +34,7 @@ function App() {
        
       </div>
     </div>
+    </Providorc>
     </Router>
   )
 }
