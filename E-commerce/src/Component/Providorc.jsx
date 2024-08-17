@@ -1,36 +1,51 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import Cart from './Cart/Cart';
 
-export const cartcontext = createContext();
+export const cartcontext = createContext({});
 
 const Providorc = ({ children }) => {
-    const [cartItems, setCartItems] = useState(() => {
-        // استرجع العناصر من localStorage عند تحميل المكون
-        const savedItems = localStorage.getItem('cartItems');
-        return savedItems ? JSON.parse(savedItems) : [];
-    });
-    
-    const [lastAddedItemId, setLastAddedItemId] = useState(null);
+    const [cartItems, setCartItems] = useState([]);
+    // const [lastAddedItemId, setLastAddedItemId] = useState(null);
 
-    const addtocart = (item) => {
-        setCartItems((prevItems) => {
-            const updatedItems = [...prevItems, item];
-            localStorage.setItem('cartItems', JSON.stringify(updatedItems)); // حفظ العناصر في localStorage
-            return updatedItems;
-        });
-        setLastAddedItemId(item.id);
-        console.log("Item added to cart:", item);
-    };
+    // const addtocart = (item) => {
+    //     setCartItems((prevItems) => [...prevItems, item]);
+    //     setLastAddedItemId(item.id); // Save the last added item's ID
+    //     console.log("Item added to cart:", item);
+    // };
+    const getItemQuantity=(id)=>{
+        return cartItems.find((item)=>item.id===id)?.quantity||0;
+    }
+    const addtocart=(id)=>{
+        setCartItems((curritem)=>{
+            if(curritem.find((item)=>item.id===id)==null)
+                {
+                     return [...curritem,{id,quantity:1}];
+            }
+            else
+            {
+                return curritem.map((item)=>{
 
-    useEffect(() => {
-        // تحديث localStorage عند تغيير cartItems
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    }, [cartItems]);
-
+                    if(item.id===id){
+                       return {...item,quantity:item.quantity+1};
+                    }
+                    else{
+                        return item;
+                    }
+                })
+            }
+        })
+    }
     return (
-        <cartcontext.Provider value={{ cartItems, addtocart, lastAddedItemId }}>
+        <cartcontext.Provider value={{ cartItems,getItemQuantity, addtocart}}>
             {children}
+           
         </cartcontext.Provider>
     );
 };
 
 export default Providorc;
+
+export const useshoppingcart = () =>{
+    return useContext(cartcontext);
+};
+

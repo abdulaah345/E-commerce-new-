@@ -4,12 +4,12 @@ import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
 import './../Fav/Fav.css';
 import products from './../data/storeitem.json';
-import { cartcontext } from '../Providorc';
+import {  useshoppingcart } from '../Providorc';
 
 export const Fav = () => {
     const [items, setItems] = useState([]);
-  const {addtocart}=useContext(cartcontext);
-  
+//   const {addtocart}=useContext(cartcontext);
+  const {addtocart}= useshoppingcart();
     useEffect(() => {
         setItems(products);
     }, []);
@@ -38,7 +38,7 @@ export const Fav = () => {
                             <h3>Price</h3>
                             <h4>${item.price}</h4>
                             <div className='details-but-fav'>
-                                <button onClick={()=>addtocart(item)}>Add To Cart</button>
+                                <button onClick={()=>addtocart(item.id)}>Add To Cart</button>
                             </div>
                         </div>
 
