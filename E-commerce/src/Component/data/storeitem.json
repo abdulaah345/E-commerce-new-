@@ -4,67 +4,78 @@
       "id": 5,
       "name": "Slip Pumps",
       "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
+      "isAdded":false
     },
     {
       "id": 6,
       "name": "Ballet Flat",
       "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
+      "isAdded":false
     },
     {
       "id": 7,
       "name": "Loafer Flats",
       "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg",
+      "isAdded":false
     },
     {
       "id": 8,
       "name": "Zoom Freak",
       "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg",
+      "isAdded":false
     },
     {
       "id": 9,
       "name": "Men's Sneaker",
       "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
+      "isAdded":false
     },
     {
       "id": 10,
       "name": "BLACK-OCE",
       "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+      "isAdded":false
     },
     {
       "id": 11,
       "name": "Future Sneaker",
       "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg",
+      "isAdded":false
     },
     {
       "id": 12,
       "name": "Adult Super",
       "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
+      "isAdded":false
     },
     {
       "id": 13,
       "name": "Basic Sneaker",
       "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg",
+      "isAdded":false
     },
     {
       "id": 14,
       "name": "Future Doubleknit",
       "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg",
+      "isAdded":false
     },
     {
       "id": 15,
       "name": "Evo Golf",
       "price": 100,
-      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+      "isAdded":false
     },
     {
       "id": 16,

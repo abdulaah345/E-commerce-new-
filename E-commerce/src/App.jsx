@@ -12,7 +12,8 @@ import Truck from './Component/Truck/Truck'
 import { Fav } from './Component/Fav/Fav'
 
 function App() {
-
+  const [added, setadded] = useState([]);
+  
   return (
     <Router>
 
@@ -22,13 +23,11 @@ function App() {
         <div className="main-content">
         <Routes>
           <Route path="/" element={<Home/>}/>
-         < Route path="/bag" element={<Bag/>}/>
-         < Route path="/cart" element={<Cart/>}/>
+         < Route path="/bag" element={<Bag />}/>
+         < Route path="/cart" element={<Cart  added={added}/>}/>
          < Route path="/offer" element={<Offer/>}/>
          < Route path="/truck" element={<Truck/>}/>
-         < Route path="/fav" element={<Fav/>}/>
-
-
+         < Route path="/fav" element={<Fav setadded={setadded} added={added}/>}/>
         </Routes>
        
       </div>

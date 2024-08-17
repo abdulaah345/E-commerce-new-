@@ -5,11 +5,13 @@ import logo6 from './../../assets/Group 58.png';
 import products from './../data/storeitem.json';
 import './Cart.css'
 
-const Cart = () => {
-  const [items, setItems] = useState([]);
-  useEffect(() => {
-    setItems(products);
-  }, []);
+const Cart = ({added}) => {
+  // const [items, setItems] = useState([]);
+  // useEffect(() => {
+  //   setItems(products);
+  // }, []);
+  console.log(added);
+  
   return (
     <div className='cart'>
       <div className="fav-banner">
@@ -24,7 +26,7 @@ const Cart = () => {
         </div>
       </div>
       <Row>
-        {items.map(item => (
+        {added.map(item => (
           <Col key={item.id} lg={12} sm={12} md={12} >
             <div className='details-fav'>
               <img src={item.imgUrl} alt={item.name} />
