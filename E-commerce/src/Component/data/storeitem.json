@@ -1,158 +1,210 @@
 [
-  {
-      "id": 1,
-      "name": "Nike Air Monarch IV",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
-  },
-  {
-      "id": 2,
-      "name": "Nike Air Vapormax Plus",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg"
-  },
-  {
-      "id": 3,
-      "name": "Nike Waffle One Sneaker",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg"
-  },
-  {
-      "id": 4,
-      "name": "Nike Running Shoe",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg"
-  },
-  {
-      "id": 5,
-      "name": "Flat Slip On Pumps",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg"
-  },
-  {
-      "id": 6,
-      "name": "Knit Ballet Flat",
-      "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg"
-  },
-  {
-      "id": 7,
-      "name": "Loafer Flats",
-      "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg"
-  },
-  {
-      "id": 8,
-      "name": "Nike Zoom Freak",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg"
-  },
-  {
-      "id": 9,
-      "name": "Nike Men's Sneaker",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg"
-  },
-  {
-      "id": 10,
-      "name": "PUMA BLACK-OCE",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg"
-  },
-  {
-      "id": 11,
-      "name": "Pacer Future Sneaker",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg"
-  },
-  {
-      "id": 12,
-      "name": "Unisex-Adult Super",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg"
-  },
-  {
-      "id": 13,
-      "name": "Roma Basic Sneaker",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg"
-  },
-  {
-      "id": 14,
-      "name": "Pacer Future Doubleknit",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg"
-  },
-  {
-      "id": 15,
-      "name": "Fusion Evo Golf Shoe",
-      "price": 100,
-      "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg"
-  },
-  {
-      "id": 16,
-      "name": "Rainbow Chex Skate",
-      "price": 100,
-      "imgUrl": "https://m.media-amazon.com/images/I/719gdz8lsTS._AC_UX575_.jpg"
-  },
-  {
-      "id": 17,
-      "name": "Low-Top Trainers",
-      "price": 100,
-      "imgUrl": "https://m.media-amazon.com/images/I/71gpFHJlnoL._AC_UX575_.jpg"
-  },
-  {
-      "id": 18,
-      "name": "Vans Unisex Low-Top",
-      "price": 100,
-      "imgUrl": "https://m.media-amazon.com/images/I/71pf7VFs9CL._AC_UX575_.jpg"
-  },
-  {
-      "id": 19,
-      "name": "Classic Bandana Sneakers",
-      "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/61N4GyWcHPL._AC_UY575_.jpg"
-  },
-  {
-      "id": 20,
-      "name": "Chunky High Heel",
-      "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg"
-  },
-  {
-      "id": 21,
-      "name": "Slip On Stiletto High Heel",
-      "price": 100,
-      "imgUrl": "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg"
-  },
-  {
-      "id": 22,
-      "name": "DREAM PAIRS Court Shoes",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg"
-  },
-  {
-      "id": 23,
-      "name": "Low Mid Block Heels",
-      "price": 200,
-      "imgUrl": "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg"
-  },
-  {
-      "id": 24,
-      "name": "Chunky High Heel",
-      "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg"
-  },
-  {
-      "id": 25,
-      "name": "Amore Fashion Stilettos",
-      "price": 150,
-      "imgUrl": "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg"
-  },
-  {
-      "id": 26,
-      "name": "Bridal Sandals Glitter",
-      "price": 50,
-      "imgUrl": "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg"
-  }
+    {
+        "id": 1,
+        "name": "Nike Air Monarch IV",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+        "description": "The Nike Air Monarch IV offers unparalleled comfort and style, making it the ideal classic sneaker for everyday wear.\nWhether running errands or relaxing with friends, this shoe ensures you're always on-trend.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 2,
+        "name": "Nike Air Vapormax Plus",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+        "description": "Designed for active lifestyles, the Nike Air Vapormax Plus combines breathability with exceptional cushioning.\nThis ensures you stay comfortable, whether at the gym or out for a walk.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 3,
+        "name": "Nike Waffle One Sneaker",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+        "description": "Embrace a lightweight feel with retro-inspired style in the Nike Waffle One Sneaker.\nPerfect for those who appreciate both fashion and functionality in their footwear.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 4,
+        "name": "Nike Running Shoe",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
+        "description": "Crafted for performance, this running shoe provides support and stability.\nElevate your athletic game and conquer new distances with ease.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 5,
+        "name": "Flat Slip On Pumps",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
+        "description": "Stylish and versatile, these slip-on flats transition seamlessly from casual outings to formal events.\nThey offer comfort without sacrificing elegance.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 6,
+        "name": "Knit Ballet Flat",
+        "price": 50,
+        "imgUrl": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
+        "description": "With a comfortable knitted design, these ballet flats are perfect for all-day wear.\nThey bring a blend of comfort and style to your wardrobe.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 7,
+        "name": "Loafer Flats",
+        "price": 50,
+        "imgUrl": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg",
+        "description": "These chic and versatile loafers enhance any outfit, whether at the office or out on the town.\nThey combine practicality with fashionable flair.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 8,
+        "name": "Nike Zoom Freak",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg",
+        "description": "Crafted for basketball enthusiasts, the Nike Zoom Freak supports quick movements while providing stability.\nDominate the court with confidence and style.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 9,
+        "name": "Nike Men's Sneaker",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
+        "description": "Combining sporty aesthetics with casual comfort, this sneaker is perfect for various occasions.\nLook and feel great wherever your day takes you.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 10,
+        "name": "PUMA BLACK-OCE",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+        "description": "The PUMA BLACK-OCE sneaker blends trendy design with comfort, making it ideal for casual outings.\nStay stylish and comfortable all day long.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 11,
+        "name": "Pacer Future Sneaker",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg",
+        "description": "This modern sneaker features a sleek design tailored for workouts and leisure.\nExperience unparalleled comfort and style in one package.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 12,
+        "name": "Unisex-Adult Super",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
+        "description": "Focusing on comfort and functionality, this unisex option is perfect for everyday use.\nFeel great as you go about your day in style.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 13,
+        "name": "Roma Basic Sneaker",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg",
+        "description": "Combining classic design with everyday comfort, this sneaker is a must-have for casual outings.\nEnjoy a timeless look that never goes out of style.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 14,
+        "name": "Pacer Future Doubleknit",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg",
+        "description": "Stylish and breathable, the Pacer Future Doubleknit is perfect for active lives.\nMove freely while looking great in this fashionable sneaker.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 15,
+        "name": "Fusion Evo Golf Shoe",
+        "price": 100,
+        "imgUrl": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
+        "description": "Specially designed for golfers, the Fusion Evo Golf Shoe combines performance with style.\nFeel confident on the course with every swing.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 16,
+        "name": "Rainbow Chex Skate",
+        "price": 100,
+        "imgUrl": "https://m.media-amazon.com/images/I/719gdz8lsTS._AC_UX575_.jpg",
+        "description": "Bright and colorful, these skate shoes offer both style and comfort.\nPerfect for skaters and casual outings alike, express your unique personality.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 17,
+        "name": "Low-Top Trainers",
+        "price": 100,
+        "imgUrl": "https://m.media-amazon.com/images/I/71gpFHJlnoL._AC_UX575_.jpg",
+        "description": "Versatile trainers designed to blend style and comfort.\nIdeal for daily activities, whether at the gym or hanging out with friends.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 18,
+        "name": "Vans Unisex Low-Top",
+        "price": 100,
+        "imgUrl": "https://m.media-amazon.com/images/I/71pf7VFs9CL._AC_UX575_.jpg",
+        "description": "Iconic and fashionable, the Vans Low-Top is perfect for casual outings and skateboarding.\nCombine a classic look with modern comfort effortlessly.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 19,
+        "name": "Classic Bandana Sneakers",
+        "price": 50,
+        "imgUrl": "https://m.media-amazon.com/images/I/61N4GyWcHPL._AC_UY575_.jpg",
+        "description": "Casual yet trendy, these sneakers feature a stylish bandana print.\nA unique addition to your footwear collection that stands out.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 20,
+        "name": "Chunky High Heel",
+        "price": 50,
+        "imgUrl": "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg",
+        "description": "On-trend and bold, these high heels are perfect for dressing up any outfit.\nAdd a stylish flair to your wardrobe with ease.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 21,
+        "name": "Slip On Stiletto High Heel",
+        "price": 100,
+        "imgUrl": "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg",
+        "description": "Elegant and sophisticated, the Slip On Stiletto offers a refined touch for special occasions.\nElevate any look and make a lasting impression.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 22,
+        "name": "DREAM PAIRS Court Shoes",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg",
+        "description": "Stylish court shoes that perfectly blend comfort and elegance.\nIdeal for formal settings where first impressions truly matter.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 23,
+        "name": "Low Mid Block Heels",
+        "price": 200,
+        "imgUrl": "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg",
+        "description": "Combining style and stability, these comfortable block heels are perfect for all-day wear.\nStay fashionable without sacrificing comfort.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 24,
+        "name": "Chunky High Heel",
+        "price": 50,
+        "imgUrl": "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg",
+        "description": "A repeat of a popular style, these chunky high heels are perfect for those who embrace bold designs.\nEnjoy reliable comfort while making a statement.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 25,
+        "name": "Amore Fashion Stilettos",
+        "price": 150,
+        "imgUrl": "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg",
+        "description": "Striking and fashion-forward, these stilettos are designed to turn heads.\nEffortlessly complement your most stylish outfits with this design.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 26,
+        "name": "Bridal Sandals Glitter",
+        "price": 50,
+        "imgUrl": "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg",
+        "description": "Add a touch of sparkle to your bridal look with these beautiful glittery sandals.\nCrafted for comfort and elegance on your special day, they’ll shine bright.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    }
 ]

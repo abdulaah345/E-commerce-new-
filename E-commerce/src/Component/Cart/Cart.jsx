@@ -15,7 +15,7 @@
 //                     {cartItems.map((item) => (
 //                         item.id === lastAddedItemId && ( // Check if the item's ID matches the last added ID
 //                             <Col key={item.id} md={4} xs={6} lg={3} className='g-5'>
-//                                 <div className='details-fav'>
+//                                 <div className='details-cart'>
 //                                     <img src={item.imgUrl} alt={item.name} />
 //                                     <p>{item.name}</p>
 //                                     <h5>Running Shoes</h5>
@@ -37,21 +37,32 @@ import React, { useContext } from 'react';
 import { useshoppingcart } from '../Providorc';
 import Cartitem from './Cartitem';
 import { Row } from 'react-bootstrap';
-
+import logo8 from './../../assets/sss.png';
+import logo6 from './../../assets/Group 58.png';
 
 const Cart = () => {
 
      const{cartItems}=useshoppingcart();
     return (
         <div>
-            <h1>Cart</h1>
-            <Row >
+           <div className="cart-banner">
+                <div className="logo">
+                    <img className="pho" src={logo6} alt="SellKick Logo" />
+                </div>
+                <div className="cart-details">
+                    <h1>Cart</h1>
+                </div>
+                <div className="cart-icon">
+                    <img src={logo8} alt="Offer Icon" />
+                </div>
+            </div>
+            
             {cartItems.map((item)=>(
                 <Cartitem key={item.id} {...item}/>
                 
               
             ))}
-            </Row>
+          
     
         </div>
     );

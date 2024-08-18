@@ -35,8 +35,28 @@ const Providorc = ({ children }) => {
             }
         })
     }
+    const decreaseitem=(id)=>{
+        setCartItems((curritem)=>{
+            if(curritem.find((item)=>item.id===id)==null)
+                {
+                     return curritem.filter((item)=>item.id!==id);
+            }
+            else
+            {
+                return curritem.map((item)=>{
+
+                    if(item.id===id){
+                       return {...item,quantity:item.quantity-1};
+                    }
+                    else{
+                        return item;
+                    }
+                })
+            }
+        })
+    }
     return (
-        <cartcontext.Provider value={{ cartItems,getItemQuantity, addtocart}}>
+        <cartcontext.Provider value={{ cartItems,getItemQuantity, addtocart,decreaseitem}}>
             {children}
            
         </cartcontext.Provider>

@@ -1,8 +1,10 @@
 import React from 'react'
 import storeitems from './../data/storeitem.json'
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col ,Button} from 'react-bootstrap';
 import './../Cart/cartitem.css'
+import { useshoppingcart } from '../Providorc';
 const Cartitem = ({id,quantity}) => {
+  const{addtocart,decreaseitem}=useshoppingcart();
     const item=storeitems.find(i=>i.id===id)
     if (item==null)return null;
   return (
@@ -10,21 +12,40 @@ const Cartitem = ({id,quantity}) => {
       
                    
 
-                
+                  <Row>
                     <Col  md={4} xs={6} lg={3} className='g-5'>
                         <div className='details-cart'>
                             <img src={item.imgUrl} alt={item.name} />
                             <p>{item.name}</p>
                             <h5>Running Shoes</h5>
-                            <h3>Price</h3>
-                            <h4>${item.price}</h4>
-                            <h6>Quantity:{quantity}</h6>
+                    
                            
+                            <h6>Quantity:{quantity}</h6>
+                            
                         </div>
 
                     </Col>
-          
-            
+                    <div className='dis-cart'>
+                    <p>{item.name}</p>
+                    <h1>{item.description}</h1>
+                    <h5>Available Sizes:</h5>
+                         <select id="size-selector">
+                            {item.sizes.map(size => (
+                                <option key={size} value={size}>{size}</option>
+                            ))}
+                        </select>
+                    
+               <div className='btnn-cart'>
+               <h4>${item.price}</h4>
+              <Button className='mx-1' onClick={()=>decreaseitem(id)}>-</Button>
+              <span className='fs-5'>{quantity} in cart</span>
+              <Button className='mx-1'onClick={()=>addtocart(id)}>+</Button>
+
+                          </div>
+                    </div>
+                   
+                    </Row>
+                    
             </>
   )
 }

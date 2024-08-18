@@ -6,10 +6,11 @@ import './../Fav/Fav.css';
 import products from './../data/storeitem.json';
 import {  useshoppingcart } from '../Providorc';
 
-export const Fav = () => {
+export const Fav = ({id}) => {
     const [items, setItems] = useState([]);
 //   const {addtocart}=useContext(cartcontext);
-  const {addtocart}= useshoppingcart();
+  const {addtocart,getItemQuantity}= useshoppingcart();
+  const quantity=gegetItemQuantity(id);
     useEffect(() => {
         setItems(products);
     }, []);
