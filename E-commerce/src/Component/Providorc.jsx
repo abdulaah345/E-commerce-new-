@@ -55,8 +55,11 @@ const Providorc = ({ children }) => {
             }
         })
     }
+    const removeitem=(id)=>{
+        setCartItems((curritem)=> curritem.filter((item)=>item.id!==id));
+    }
     return (
-        <cartcontext.Provider value={{ cartItems,getItemQuantity, addtocart,decreaseitem}}>
+        <cartcontext.Provider value={{ cartItems,getItemQuantity, addtocart,decreaseitem,removeitem}}>
             {children}
            
         </cartcontext.Provider>

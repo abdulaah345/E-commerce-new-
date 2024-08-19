@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button ,Alert} from 'react-bootstrap';
 import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
 import './../Fav/Fav.css';
@@ -8,9 +8,21 @@ import {  useshoppingcart } from '../Providorc';
 
 export const Fav = ({id}) => {
     const [items, setItems] = useState([]);
+    const [showAlert, setShowAlert] = useState(false);
+
 //   const {addtocart}=useContext(cartcontext);
-  const {addtocart,getItemQuantity}= useshoppingcart();
-  const quantity=gegetItemQuantity(id);
+  const {addtocart,getItemQuantity,removeitem}= useshoppingcart();
+
+  
+  const handleAddToCart = (itemId) => {
+    addtocart(itemId);
+    setShowAlert(true);
+};
+
+setTimeout(() => {
+    setShowAlert(false);
+}, 3000)
+
     useEffect(() => {
         setItems(products);
     }, []);
@@ -39,14 +51,24 @@ export const Fav = ({id}) => {
                             <h3>Price</h3>
                             <h4>${item.price}</h4>
                             <div className='details-but-fav'>
-                                <button onClick={()=>addtocart(item.id)}>Add To Cart</button>
+                            {  getItemQuantity(item.id) === 0?  <button onClick={()=>handleAddToCart(item.id)}>Add To Cart</button>: (
+                                    <Button style={{border:'none'}} onClick={()=>removeitem(item.id)}>Remove</Button>
+                                )}
                             </div>
                         </div>
 
                     </Col>
                 ))}
             </Row>
-
+            <Alert 
+                show={showAlert} 
+                variant="dark" 
+                onClose={() => setShowAlert(false)} 
+                 
+                className="custom-alert"
+            >
+                Item added to cart!
+            </Alert>
         </>
     );
 }

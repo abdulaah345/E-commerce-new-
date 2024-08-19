@@ -120,3 +120,15 @@ margin-bottom: 10%;
         margin-bottom: 20px;
     }
 }
+.custom-alert {
+    position: fixed;
+    bottom: 20px; /* المسافة من الأسفل */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* عرض التنبيه */
+    z-index: 1050; /* يمكن تعديل الرقم بحسب الحاجة */
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
