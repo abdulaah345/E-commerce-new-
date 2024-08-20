@@ -11,6 +11,7 @@ import Offer from './Component/Offer/Offer'
 import Truck from './Component/Truck/Truck'
 import { Fav } from './Component/Fav/Fav'
 import Providorc from './Component/Providorc'
+import Checks from './Component/check-out/Checks'
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
          < Route path="/offer" element={<Offer/>}/>
          < Route path="/truck" element={<Truck/>}/>
          < Route path="/fav" element={<Fav/>}/>
+         < Route path="/checks" element={<Checks/>}/>
+
 
 
         </Routes>

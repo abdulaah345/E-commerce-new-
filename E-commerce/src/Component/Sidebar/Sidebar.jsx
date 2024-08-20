@@ -32,6 +32,9 @@ const Sidebar = () => {
       <Nav.Link href="#fav" className="d-flex align-items-center" as={NavLink} to="/fav">
         <FaHeart className="icon" /> 
       </Nav.Link>
+      <Nav.Link href="#fav" className="d-flex align-items-center" as={NavLink} to="/checks">
+        <FaHeart className="icon" /> 
+      </Nav.Link>
     </Nav>
   </Navbar>
   </div>

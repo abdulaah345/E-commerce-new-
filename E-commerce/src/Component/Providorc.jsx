@@ -5,6 +5,7 @@ export const cartcontext = createContext({});
 
 const Providorc = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
+    const [checkoutItems, setCheckoutItems] = useState([]);
     // const [lastAddedItemId, setLastAddedItemId] = useState(null);
 
     // const addtocart = (item) => {
@@ -14,6 +15,9 @@ const Providorc = ({ children }) => {
     // };
     const getItemQuantity=(id)=>{
         return cartItems.find((item)=>item.id===id)?.quantity||0;
+    }
+    const getItem=(id)=>{
+        return checkoutItems.find((item)=>item.id===id)?.quantity||0;
     }
     const addtocart=(id)=>{
         setCartItems((curritem)=>{
@@ -35,6 +39,26 @@ const Providorc = ({ children }) => {
             }
         })
     }
+    const addtocheckout = ({ id, quantity }) => {
+        setCheckoutItems((curritem) => {
+          // تحقق إذا كان العنصر موجوداً بالفعل في checkoutItems
+          const itemInCheckout = curritem.find((item) => item.id === id);
+      
+          if (itemInCheckout == null) {
+            // إضافة العنصر الجديد
+            return [...curritem, { id, quantity }];
+          } else {
+            // تحديث الكمية إذا كان العنصر موجوداً
+            return curritem.map((item) => {
+              if (item.id === id) {
+                return { ...item, quantity };
+              }
+              return item;
+            });
+          }
+        });
+      };
+      
     const decreaseitem=(id)=>{
         setCartItems((curritem)=>{
             if(curritem.find((item)=>item.id===id)==null)
@@ -59,7 +83,7 @@ const Providorc = ({ children }) => {
         setCartItems((curritem)=> curritem.filter((item)=>item.id!==id));
     }
     return (
-        <cartcontext.Provider value={{ cartItems,getItemQuantity, addtocart,decreaseitem,removeitem}}>
+        <cartcontext.Provider value={{ cartItems,checkoutItems,getItem,getItemQuantity,addtocheckout ,addtocart,decreaseitem,removeitem}}>
             {children}
            
         </cartcontext.Provider>
