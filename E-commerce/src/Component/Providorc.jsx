@@ -79,11 +79,15 @@ const Providorc = ({ children }) => {
             }
         })
     }
+    const addAllToCheckout = () => {
+        setCheckoutItems(cartItems);
+    };
     const removeitem=(id)=>{
         setCartItems((curritem)=> curritem.filter((item)=>item.id!==id));
     }
+    
     return (
-        <cartcontext.Provider value={{ cartItems,checkoutItems,getItem,getItemQuantity,addtocheckout ,addtocart,decreaseitem,removeitem}}>
+        <cartcontext.Provider value={{ cartItems,checkoutItems,addAllToCheckout,getItem,getItemQuantity,addtocheckout ,addtocart,decreaseitem,removeitem}}>
             {children}
            
         </cartcontext.Provider>

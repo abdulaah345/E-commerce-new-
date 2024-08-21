@@ -31,7 +31,7 @@ function App() {
          < Route path="/fav" element={<Fav/>}/>
          < Route path="/checks" element={<Checks/>}/>
 
-
+        
 
         </Routes>
        

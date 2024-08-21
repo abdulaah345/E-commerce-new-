@@ -5,7 +5,7 @@ import "./../Cart/cartitem.css";
 import { useshoppingcart } from "../Providorc";
 import { useNavigate } from "react-router-dom";
 const Cartitem = ({ id, quantity }) => {
-  const { addtocart,addtocheckout, decreaseitem ,cartItems} = useshoppingcart();
+  const { addtocart,addtocheckout, decreaseitem ,cartItems,addAllToCheckout} = useshoppingcart();
   const navigate = useNavigate();
   const handelcheckout = (itemId) => {
     // إيجاد العنصر الحالي في cartItems
@@ -16,7 +16,7 @@ const Cartitem = ({ id, quantity }) => {
       // تحديث checkoutItems بناءً على العنصر في cartItems
       addtocheckout({ id: itemId, quantity: itemInCart.quantity });
     }
-    
+    addAllToCheckout(itemId);
     navigate("/checks");
   };
   
