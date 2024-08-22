@@ -291,7 +291,7 @@ const Checkout = () => {
                     })}
                   </div>
                   <div className="col-lg-5">
-                    <div className="card bg-primary text-white rounded-3">
+                    <div className="card text-white rounded-3 "style={{background:"linear-gradient(to bottom, #3C6677, #D9D9D9)"}}>
                       <div className="card-body">
                         <div className="d-flex justify-content-between align-items-center mb-4">
                           <h5 className="mb-0">Card details</h5>

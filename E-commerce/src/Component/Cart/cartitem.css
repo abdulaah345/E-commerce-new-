@@ -135,3 +135,24 @@
     margin-left: 50px;
     
 }
+
+
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #555;
+}

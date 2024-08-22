@@ -23,6 +23,7 @@ const Checks = () => {
 
             {/* Render Checkout only once */}
             <Checkout checkoutItems={checkoutItems} />
+            
         </div>
     );
 };
