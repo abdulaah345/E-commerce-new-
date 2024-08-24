@@ -1,11 +1,12 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState,useEffect } from 'react';
 import Cart from './Cart/Cart';
 
 export const cartcontext = createContext({});
-
+ const initialcartitem=localStorage.getItem("shopping")?JSON.parse(localStorage.getItem("shopping")):[];
+ const inialcheckout=localStorage.getItem("checkout")?JSON.parse(localStorage.getItem("checkout")):[];
 const Providorc = ({ children }) => {
-    const [cartItems, setCartItems] = useState([]);
-    const [checkoutItems, setCheckoutItems] = useState([]);
+    const [cartItems, setCartItems] = useState(initialcartitem);
+    const [checkoutItems, setCheckoutItems] = useState(inialcheckout);
     // const [lastAddedItemId, setLastAddedItemId] = useState(null);
 
     // const addtocart = (item) => {
@@ -13,6 +14,12 @@ const Providorc = ({ children }) => {
     //     setLastAddedItemId(item.id); // Save the last added item's ID
     //     console.log("Item added to cart:", item);
     // };
+    useEffect(()=>{
+     localStorage.setItem("shopping",JSON.stringify(cartItems));
+    },[cartItems])
+    useEffect(()=>{
+localStorage.setItem("checkout",JSON.stringify(checkoutItems));
+    },[checkoutItems])
     const getItemQuantity=(id)=>{
         return cartItems.find((item)=>item.id===id)?.quantity||0;
     }

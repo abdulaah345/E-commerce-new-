@@ -12,7 +12,45 @@
     justify-content: space-between;
     align-items: center;
 }
+.details-offs{
+    box-shadow: -20px 10px 8px rgba(0, 0, 0, 0.1),  20px 10px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: #fff;
+    width: 85%;
+    height:85%;
+    border-radius: 30px;
+    margin-top: 5%;
+    padding-top: 20%;
+   
 
+}
+.offs-icc {
+    position: relative;
+}
+.offs-icc img{
+    position: absolute;
+    right: 50px;
+    bottom: 420px;
+
+}
+.details-offs img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #fff; /* لون الخلفية الذي تريده */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.details-offs p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+    
+}
 .offer-banner::after {
     content: '';
     position: absolute;
@@ -80,11 +118,14 @@
     width: 100px;
     height: 40px;
     border-radius: 30px;
-    margin-left: 5%;
-    margin-top: 1%;
+    margin-left: 35%;
     cursor: pointer;
+    margin-top: 5%;
+ 
+ 
 
 }
+
 @media (max-width: 767.98px) {
     .offer-banner {
         flex-direction: column;

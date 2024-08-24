@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo5 from'./../../assets/image-removebg-preview (8) 1.png'
 import logo6 from'./../../assets/Group 58.png'
 import logo7 from'./../../assets/Group 76.png'
+import logo9 from'./../../assets/bxs_offer (1).png'
+import { Row, Col, Button ,Alert} from 'react-bootstrap';
+
 import './../Offer/Offer.css'
+import offerProducts from './../data/offerdata.json';
 const Offer = () => {
-  return (
+    const[offeritems,setOfferitems]=useState([]);
+    useEffect(()=>{
+setOfferitems(offerProducts);
+
+    },[])
+      return (
+    
     <>
 <div className="offer-banner">
             <div className="logo">
@@ -20,12 +30,30 @@ const Offer = () => {
             </div>
 
         </div>
-        <div className='details-offer'>
+        <Row >
+                {offeritems.map((item) => (
+                    <Col key={item.id} md={4} xs={6} lg={3} className='g-5 p'>
+                        <div className='details-offs'>
+                            <img src={item.imageUrl} alt={item.name} />
+                            <p>{item.name}</p> 
+                           
+                        
+                        </div>
+                        <div className='details-but'>
+                        <button>BUY NOW</button>
+                        </div>
+                        <div className='offs-icc'>
+                            <img src={logo9} />
+                        </div>
+                    </Col>
+                ))}
+            </Row>
+
+        {/* <div className='details-offer'>
                 <img src={logo7}/>
             </div>
-       <div className='details-but'>
-                <button>Buy Now</button>
-            </div>
+      
+            </div> */}
     </>
   )
 }
