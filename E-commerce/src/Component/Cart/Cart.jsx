@@ -11,8 +11,9 @@ const Cart = ({added}) => {
   //   setItems(products);
   // }, []);
   console.log(added);
-  
+  let cartItems = JSON.parse(localStorage.getItem("cartItems"))
   return (
+    
     <div className='cart'>
       <div className="fav-banner">
         <div className="logo">
@@ -26,7 +27,7 @@ const Cart = ({added}) => {
         </div>
       </div>
       <Row>
-        {added.map(item => (
+        {cartItems.map(item => (
           <Col key={item.id} lg={12} sm={12} md={12} >
             <div className='details-fav'>
               <img src={item.imgUrl} alt={item.name} />
