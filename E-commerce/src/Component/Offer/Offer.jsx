@@ -34,17 +34,17 @@ setOfferitems(offerProducts);
                 {offeritems.map((item) => (
                     <Col key={item.id} md={4} xs={6} lg={3} className='g-5 p'>
                         <div className='details-offs'>
-                            <img src={item.imageUrl} alt={item.name} />
+                            <img  src={item.imageUrl} alt={item.name} />
                             <p>{item.name}</p> 
-                           
+                            
+                            <img  src={logo9} />
+                      
                         
                         </div>
                         <div className='details-but'>
                         <button>BUY NOW</button>
                         </div>
-                        <div className='offs-icc'>
-                            <img src={logo9} />
-                        </div>
+   
                     </Col>
                 ))}
             </Row>
