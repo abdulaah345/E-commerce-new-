@@ -4,15 +4,21 @@ import logo6 from'./../../assets/Group 58.png'
 import logo7 from'./../../assets/Group 76.png'
 import logo9 from'./../../assets/bxs_offer (1).png'
 import { Row, Col, Button ,Alert} from 'react-bootstrap';
+import { useshoppingcart } from '../Providorc';
 
 import './../Offer/Offer.css'
 import offerProducts from './../data/offerdata.json';
 const Offer = () => {
+    const { cartItems, addAllToCheckout,addtocart,removeitem ,getItemQuantity} = useshoppingcart();
     const[offeritems,setOfferitems]=useState([]);
     useEffect(()=>{
 setOfferitems(offerProducts);
 
     },[])
+    const handleAddToCart = (itemId) => {
+        addtocart(itemId);
+        
+    };
       return (
     
     <>
@@ -30,6 +36,7 @@ setOfferitems(offerProducts);
             </div>
 
         </div>
+
         <Row >
                 {offeritems.map((item) => (
                     <Col key={item.id} md={4} xs={6} lg={3} className='g-5 p'>
@@ -42,7 +49,9 @@ setOfferitems(offerProducts);
                         
                         </div>
                         <div className='details-but'>
-                        <button>BUY NOW</button>
+                        {  getItemQuantity(item.id) === 0?  <button onClick={()=>handleAddToCart(item.id)}>BUY NOW</button>: (
+                                    <Button style={{border:'none'}} onClick={()=>removeitem(item.id)}>Remove</Button>
+                                )}
                         </div>
    
                     </Col>
