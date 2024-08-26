@@ -3,14 +3,17 @@ import logo5 from'./../../assets/image-removebg-preview (8) 1.png'
 import logo6 from'./../../assets/Group 58.png'
 import logo7 from'./../../assets/Group 76.png'
 import logo9 from'./../../assets/bxs_offer (1).png'
-import { Row, Col, Button ,Alert} from 'react-bootstrap';
+import { Row, Col, Button ,Alert,Form,InputGroup} from 'react-bootstrap';
 import { useshoppingcart } from '../Providorc';
+
 
 import './../Offer/Offer.css'
 import offerProducts from './../data/offerdata.json';
 const Offer = () => {
     const { cartItems, addAllToCheckout,addtocart,removeitem ,getItemQuantity} = useshoppingcart();
     const[offeritems,setOfferitems]=useState([]);
+    const [search,setSearch]=useState('');
+
     useEffect(()=>{
 setOfferitems(offerProducts);
 
@@ -36,12 +39,21 @@ setOfferitems(offerProducts);
             </div>
 
         </div>
-
+        <Form className="d-flex justify-content-center">
+        
+        <InputGroup className='my-5 w-50 '>
+            <Form.Control onChange={(e)=>setSearch(e.target.value)} placeholder='Search' style={{backgroundColor:"#D9D9D9"}} />
+        </InputGroup>
+    </Form>
         <Row >
-                {offeritems.map((item) => (
+                {offeritems.filter((item)=>{
+                  return search.toLowerCase() === '' 
+                  ? item 
+                  : item.name.toLowerCase().includes(search.toLowerCase());
+                }).map((item) => (
                     <Col key={item.id} md={4} xs={6} lg={3} className='g-5 p'>
                         <div className='details-offs'>
-                            <img  src={item.imageUrl} alt={item.name} />
+                            <img  src={item.imgUrl} alt={item.name} />
                             <p>{item.name}</p> 
                             
                             <img  src={logo9} />

@@ -1,15 +1,18 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { Row, Col, Button ,Alert} from 'react-bootstrap';
+import { Row, Col, Button ,Alert, InputGroup,Form} from 'react-bootstrap';
+import { FaSearch } from 'react-icons/fa';
+
 import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
 import './../Fav/Fav.css';
 import products from './../data/storeitem.json';
 import {  useshoppingcart } from '../Providorc';
+import offerProducts from './../data/offerdata.json';
 
 export const Fav = ({id}) => {
     const [items, setItems] = useState([]);
     const [showAlert, setShowAlert] = useState(false);
-
+    const [search,setSearch]=useState('');
 //   const {addtocart}=useContext(cartcontext);
   const {addtocart,getItemQuantity,removeitem}= useshoppingcart();
 
@@ -18,14 +21,19 @@ export const Fav = ({id}) => {
     addtocart(itemId);
     setShowAlert(true);
 };
+useEffect(() => {
+    // قم بتصفية المنتجات بناءً على العروض وإزالة المنتجات المتكررة
+    const filteredItems = products.filter(item => 
+        !offerProducts.some(offerItem => offerItem.id === item.id)
+    );
+    setItems(filteredItems);
+}, []);
 
 setTimeout(() => {
     setShowAlert(false);
 }, 3000)
 
-    useEffect(() => {
-        setItems(products);
-    }, []);
+   
 
     return (
         <>
@@ -40,9 +48,18 @@ setTimeout(() => {
                     <img src={logo8} alt="Offer Icon" />
                 </div>
             </div>
-
+            <Form className="d-flex justify-content-center">
+        
+                <InputGroup className='my-5 w-50'>
+                    <Form.Control onChange={(e)=>setSearch(e.target.value)} placeholder='Search'  style={{backgroundColor:"#D9D9D9"}}  />
+                </InputGroup>
+            </Form>
             <Row >
-                {items.map((item) => (
+                {items.filter((item)=>{
+                  return search.toLowerCase() === '' 
+                  ? item 
+                  : item.name.toLowerCase().includes(search.toLowerCase());
+                }).map((item) => (
                     <Col key={item.id} md={4} xs={6} lg={3} className='g-5'>
                         <div className='details-fav'>
                             <img src={item.imgUrl} alt={item.name} />

@@ -46,6 +46,7 @@ localStorage.setItem("checkout",JSON.stringify(checkoutItems));
             }
         })
     }
+    
     const addtocheckout = ({ id, quantity }) => {
         setCheckoutItems((curritem) => {
           // تحقق إذا كان العنصر موجوداً بالفعل في checkoutItems

@@ -206,5 +206,126 @@
         "imgUrl": "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg",
         "description": "Add a touch of sparkle to your bridal look with these beautiful glittery sandals.\nCrafted for comfort and elegance on your special day, they’ll shine bright.",
         "sizes": [40, 41, 42, 43, 44, 45]
+    },
+
+    {
+        "id": 27,
+        "name": "Nike React Infinity Run Flyknit",
+        "price": 160,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg",
+        "description": "The Nike React Infinity Run Flyknit is designed to keep you running with comfort and support, offering a smooth ride and superior fit for long distances.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 28,
+        "name": "Nike React Miler",
+        "price": 130,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg",
+        "description": "The Nike React Miler provides stability and cushioning for your daily runs, ensuring a durable and comfortable experience.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 29,
+        "name": "Nike Air Zoom Pegasus 37",
+        "price": 120,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-33b0a0a5-c171-46cc-ad20-04a768703e47/air-zoom-pegasus-37-womens-running-shoe-Jl0bDf.jpg",
+        "description": "The Nike Air Zoom Pegasus 37 is a trusted workhorse that delivers responsive cushioning and a smooth transition for your run.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 30,
+        "name": "Nike Joyride Run Flyknit",
+        "price": 180,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99a7d3cb-e40c-4474-91c2-0f2e6d231fd2/joyride-run-flyknit-womens-running-shoe-HcfnJd.jpg",
+        "description": "The Nike Joyride Run Flyknit is engineered for the ultimate in personalized cushioning, with tiny foam beads that conform to your foot's unique shape.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 31,
+        "name": "Nike Mercurial Vapor 13 Elite FG",
+        "price": 250,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9dda6202-e2ff-4711-9a09-0fcb7d90c164/mercurial-vapor-13-elite-fg-firm-ground-soccer-cleat-14MsF2.jpg",
+        "description": "The Nike Mercurial Vapor 13 Elite FG is built for speed and agility, with a lightweight design and superior traction for firm ground play.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 32,
+        "name": "Nike Phantom Vision Elite Dynamic Fit FG",
+        "price": 150,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/s1amp7uosrn0nqpsxeue/phantom-vision-elite-dynamic-fit-fg-firm-ground-soccer-cleat-19Kv1V.jpg",
+        "description": "The Nike Phantom Vision Elite Dynamic Fit FG provides a snug fit and precise touch for optimal control and power on the field.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 33,
+        "name": "Nike Phantom Venom Academy FG",
+        "price": 80,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/whegph8z9ornhxklc8rp/phantom-venom-academy-fg-firm-ground-soccer-cleat-6JVNll.jpg",
+        "description": "The Nike Phantom Venom Academy FG is crafted for powerful, precise strikes, with a focus on accuracy and control on firm ground.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 34,
+        "name": "Nike Mercurial Vapor 13 Elite Tech Craft FG",
+        "price": 145,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/vhbwnkor8sxt8qtecgia/mercurial-vapor-13-elite-tech-craft-fg-firm-ground-soccer-cleat-l38JPj.jpg",
+        "description": "The Nike Mercurial Vapor 13 Elite Tech Craft FG combines premium materials with cutting-edge design for a natural feel and explosive speed.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 35,
+        "name": "Nike Mercurial Superfly 7 Pro MDS FG",
+        "price": 137,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-a52a8aec-22dc-4982-961b-75c5f4c72805/mercurial-superfly-7-pro-mds-fg-firm-ground-soccer-cleat-mhcpdN.jpg",
+        "description": "The Nike Mercurial Superfly 7 Pro MDS FG offers dynamic speed and a snug fit, designed to enhance your play on firm ground surfaces.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 36,
+        "name": "Nike Air Force 1",
+        "price": 90,
+        "imgUrl": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/178b2a46-3ee4-492b-882e-f71efdd53a36/air-force-1-big-kids-shoe-2zqp8D.jpg",
+        "description": "The Nike Air Force 1 is a timeless classic, featuring durable leather and iconic styling that has stood the test of time.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 37,
+        "name": "Nike Air Max 90",
+        "price": 100,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8439f823-86cf-4086-81d2-4f9ff9a66866/air-max-90-big-kids-shoe-1wzwJM.jpg",
+        "description": "The Nike Air Max 90 continues to offer unparalleled comfort and a retro look, making it a favorite among sneaker enthusiasts.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 38,
+        "name": "Nike Air Max 90 LTR",
+        "price": 110,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-620aeb37-1b28-44b0-9b14-5572f8cbc948/air-max-90-ltr-big-kids-shoe-hdNLQ5.jpg",
+        "description": "The Nike Air Max 90 LTR offers a premium feel with leather overlays, providing a luxurious touch to a classic silhouette.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 39,
+        "name": "Nike Joyride Dual Run",
+        "price": 110,
+        "imgUrl": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/33888130-0320-41a1-ba53-a026decd8aa2/joyride-dual-run-big-kids-running-shoe-1HDJF8.jpg",
+        "description": "The Nike Joyride Dual Run is designed for a personalized running experience, with Joyride technology providing adaptive cushioning.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 40,
+        "name": "Nike Renew Run",
+        "price": 80,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c216c3f4-8f29-4eb4-a1d6-2a6fc758d949/renew-run-big-kids-running-shoe-78CN9q.jpg",
+        "description": "The Nike Renew Run delivers soft, stable cushioning for a smooth ride, perfect for your everyday running needs.",
+        "sizes": [40, 41, 42, 43, 44, 45]
+    },
+    {
+        "id": 41,
+        "name": "Nike Flex Runner",
+        "price": 70,
+        "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-aaf39a05-f4e8-45e8-a206-d0d1621639c0/flex-runner-big-kids-running-shoe-fLBhh6.jpg",
+        "description": "The Nike Flex Runner is built for speed and ease of use, featuring a slip-on design that provides a snug fit for young athletes.",
+        "sizes": [40, 41, 42, 43, 44, 45]
     }
 ]
