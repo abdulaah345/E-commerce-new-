@@ -12,6 +12,7 @@ import Truck from './Component/Truck/Truck'
 import { Fav } from './Component/Fav/Fav'
 import Providorc from './Component/Providorc'
 import Checks from './Component/check-out/Checks'
+import Order from './Component/Order/Order'
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
          < Route path="/truck" element={<Truck/>}/>
          < Route path="/fav" element={<Fav/>}/>
          < Route path="/checks" element={<Checks/>}/>
-
+         <Route path="/order" element={<Order/>}/>
         
 
         </Routes>

@@ -87,7 +87,7 @@ const Cart = () => {
     };
 
     return (
-        <div>
+        <div className="cart-page">
             <div className="cart-banner">
                 <div className="logo">
                     <img className="pho" src={logo6} alt="SellKick Logo" />

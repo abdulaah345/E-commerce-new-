@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.cart-page {
+    margin-left: 200px;
+} 
+
 .cart-banner {
    
     background-color: #ffffff;

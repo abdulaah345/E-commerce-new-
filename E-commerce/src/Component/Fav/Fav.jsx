@@ -36,7 +36,7 @@ setTimeout(() => {
    
 
     return (
-        <>
+        <div className="fav">
             <div className="fav-banner">
                 <div className="logo">
                     <img className="pho" src={logo6} alt="SellKick Logo" />
@@ -86,7 +86,7 @@ setTimeout(() => {
             >
                 Item added to cart!
             </Alert>
-        </>
+        </div>
     );
 }
 

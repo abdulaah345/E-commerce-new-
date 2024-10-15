@@ -24,7 +24,7 @@ setOfferitems(offerProducts);
     };
       return (
     
-    <>
+    <div className="offer">
 <div className="offer-banner">
             <div className="logo">
                 <img  className="pho"src={logo6} alt="SellKick Logo" />
@@ -75,7 +75,7 @@ setOfferitems(offerProducts);
             </div>
       
             </div> */}
-    </>
+    </div>
   )
 }
 
