@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.offer {
+    margin-left: 200px;
+}
+
 .offer-banner {
    
     background-color: #ffffff;

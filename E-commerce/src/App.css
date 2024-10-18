@@ -49,7 +49,7 @@
 
 .main-content {
   flex-grow: 1;
-  margin-left: 250px; /* عرض الشريط الجانبي */
-  padding: 20px;
+  /* margin-left: 250px; عرض الشريط الجانبي */
+  /* padding: 20px; */
  
 }

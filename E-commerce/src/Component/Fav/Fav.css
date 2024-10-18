@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.fav {
+    margin-left: 200px;
+}
+
 .fav-banner {
    
     background-color: #ffffff;

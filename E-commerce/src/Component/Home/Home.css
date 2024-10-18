@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back-photo {
+    width: 100vw;
+    height: 80vh;  
+}
+
+.home-mar {
+    margin-left: 200px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    position: absolute;
+    top: 0;
+    width: 88%; 
+}
+
+.logo .photo {
+    width: 300px;
+}
+
+.home-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home-title h2 {
+    width: 495px;
+    font-size: 80px;
+    font-family: "Limelight", sans-serif;
+    margin: 0 auto;
+}
+
+.home-title p {
+    font-size: 28px;
+    color: #895F4F;
+    font-family: "Bangers" , sans-serif;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.home-img img {
+    width: 600px;
+    height: 350px;
+    position: relative;
+}
+
+
+
+.home-container{
+    margin-left: 32%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.home-content .get-title {
+    text-align: center;    
+    font-size: 80px;
+    text-transform: capitalize;
+    font-family: "Bangers" , sans-serif;
+    letter-spacing: 4px;
+}
+
+.home-content img {
+    width: 500px;
+}
+
+.home-today p{
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: 'Bebas Neue' ,sans-serif;
+}
+
+.home-today img {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.btn-groups{
+    margin-left: 110px;
+    position: relative;
+}
+
+.btn-groups .buy-btn {
+    margin-left: 200px;
+}
+
+.btn-groups button {
+    background-color: #344E5B;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    width: 100px;
+}
+
+.tour-btn {
+    position: absolute;
+    bottom: 31%;
+    left: 44%;
+}
+
+.tour-btn button {
+    background-color: #264653;
+    width: 280px;
+    height: 100px;
+    color: white;
+    font-size: 60px;
+    font-family: "Bangers" , sans-serif;
+    letter-spacing: 2px;
+}
+
+.home-footer {
+    background-color: #fffaef;
+    width: 100%;
+    height: 250px;
+
+}
+
+.footer-content h2 {
+    text-align: center;
+    line-height: 3;
+    font-size: 48px;
+    font-family: 'Caveat' , sans-serif ;
+}
+
+.footer-content .icons {
+    margin-left: 46%;
+}
+
+.footer-content .icon-link {
+    font-size: 48px;
+    margin-left: 20px;
+    color: #264653;
+}
+
