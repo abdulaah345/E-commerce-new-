@@ -73,13 +73,12 @@ import storeitems from "./../data/storeitem.json";
 import { Row, Col, Button } from "react-bootstrap";
 import "./../Cart/cartitem.css";
 import { useshoppingcart } from "../Providorc";
-
 const Cartitem = ({ id, quantity }) => {
   const { addtocart, decreaseitem } = useshoppingcart();
 
   const item = storeitems.find((i) => i.id === id);
   if (item == null) return null;
-
+  
   return (
     <>
       <Row>

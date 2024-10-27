@@ -13,9 +13,7 @@ const Order = () => {
 
                 <div className="order-background">
                     <img src={Group93} alt="Order Background" />
-                    <div className="order-icon">
-                        <img src={lolo2} alt="Order Icon" />
-                    </div>
+                 
                 </div>
 
             </div>

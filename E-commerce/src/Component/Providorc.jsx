@@ -1,110 +1,131 @@
-import React, { createContext, useContext, useState,useEffect } from 'react';
-import Cart from './Cart/Cart';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 export const cartcontext = createContext({});
- const initialcartitem=localStorage.getItem("shopping")?JSON.parse(localStorage.getItem("shopping")):[];
- const inialcheckout=localStorage.getItem("checkout")?JSON.parse(localStorage.getItem("checkout")):[];
+const initialcartitem = localStorage.getItem("shopping") ? JSON.parse(localStorage.getItem("shopping")) : [];
+const inialcheckout = localStorage.getItem("checkout") ? JSON.parse(localStorage.getItem("checkout")) : [];
+const initialFavorites = localStorage.getItem("favorites") ? JSON.parse(localStorage.getItem("favorites")) : [];
+const initialFav = localStorage.getItem("fav") ? JSON.parse(localStorage.getItem("fav")) : [];
+
 const Providorc = ({ children }) => {
     const [cartItems, setCartItems] = useState(initialcartitem);
     const [checkoutItems, setCheckoutItems] = useState(inialcheckout);
-    // const [lastAddedItemId, setLastAddedItemId] = useState(null);
+    const [favoriteItems, setFavoriteItems] = useState(initialFavorites);
+    const [fav, setFav] = useState(initialFav);
 
-    // const addtocart = (item) => {
-    //     setCartItems((prevItems) => [...prevItems, item]);
-    //     setLastAddedItemId(item.id); // Save the last added item's ID
-    //     console.log("Item added to cart:", item);
-    // };
-    useEffect(()=>{
-     localStorage.setItem("shopping",JSON.stringify(cartItems));
-    },[cartItems])
-    useEffect(()=>{
-localStorage.setItem("checkout",JSON.stringify(checkoutItems));
-    },[checkoutItems])
-    const getItemQuantity=(id)=>{
-        return cartItems.find((item)=>item.id===id)?.quantity||0;
-    }
-    const getItem=(id)=>{
-        return checkoutItems.find((item)=>item.id===id)?.quantity||0;
-    }
-    const addtocart=(id)=>{
-        setCartItems((curritem)=>{
-            if(curritem.find((item)=>item.id===id)==null)
-                {
-                     return [...curritem,{id,quantity:1}];
-            }
-            else
-            {
-                return curritem.map((item)=>{
 
-                    if(item.id===id){
-                       return {...item,quantity:item.quantity+1};
-                    }
-                    else{
-                        return item;
-                    }
-                })
+    useEffect(() => {
+        localStorage.setItem("shopping", JSON.stringify(cartItems));
+    }, [cartItems]);
+
+    useEffect(() => {
+        localStorage.setItem("checkout", JSON.stringify(checkoutItems));
+    }, [checkoutItems]);
+
+    useEffect(() => {
+        localStorage.setItem("favorites", JSON.stringify(favoriteItems));
+    }, [favoriteItems]);
+
+    const getItemQuantity = (id) => cartItems.find((item) => item.id === id)?.quantity || 0;
+
+    const addtocart = (id) => {
+        setCartItems((curritem) => {
+            if (!curritem.find((item) => item.id === id)) {
+                return [...curritem, { id, quantity: 1 }];
+            } else {
+                return curritem.map((item) => item.id === id 
+                    ? { ...item, quantity: item.quantity + 1 } 
+                    : item
+                );
             }
-        })
-    }
-    
+        });
+    };
+    const addtofav = (id) => {
+        setFav((curritem) => {
+            if (!curritem.find((item) => item.id === id)) {
+                return [...curritem, { id, quantity: 1 }];
+            } else {
+                return curritem.map((item) => item.id === id 
+                    ? { ...item, quantity: item.quantity + 1 } 
+                    : item
+                );
+            }
+        });
+    };
+
     const addtocheckout = ({ id, quantity }) => {
         setCheckoutItems((curritem) => {
-          // تحقق إذا كان العنصر موجوداً بالفعل في checkoutItems
-          const itemInCheckout = curritem.find((item) => item.id === id);
-      
-          if (itemInCheckout == null) {
-            // إضافة العنصر الجديد
-            return [...curritem, { id, quantity }];
-          } else {
-            // تحديث الكمية إذا كان العنصر موجوداً
-            return curritem.map((item) => {
-              if (item.id === id) {
-                return { ...item, quantity };
-              }
-              return item;
-            });
-          }
+            const itemInCheckout = curritem.find((item) => item.id === id);
+            if (!itemInCheckout) {
+                return [...curritem, { id, quantity }];
+            } else {
+                return curritem.map((item) => item.id === id 
+                    ? { ...item, quantity } 
+                    : item
+                );
+            }
         });
-      };
-      
-    const decreaseitem=(id)=>{
-        setCartItems((curritem)=>{
-            if(curritem.find((item)=>item.id===id)==null)
-                {
-                     return curritem.filter((item)=>item.id!==id);
-            }
-            else
-            {
-                return curritem.map((item)=>{
+    };
 
-                    if(item.id===id){
-                       return {...item,quantity:item.quantity-1};
-                    }
-                    else{
-                        return item;
-                    }
-                })
-            }
-        })
-    }
+    const decreaseitem = (id) => {
+        setCartItems((curritem) => 
+            curritem.map((item) => item.id === id 
+                ? { ...item, quantity: item.quantity - 1 } 
+                : item
+            )
+        );
+    };
+
     const addAllToCheckout = () => {
         setCheckoutItems(cartItems);
     };
-    const removeitem=(id)=>{
-        setCartItems((curritem)=> curritem.filter((item)=>item.id!==id));
-    }
-    
+
+    const removeitem = (id) => {
+        setCartItems((curritem) => curritem.filter((item) => item.id !== id));
+    };
+    const removefav = (id) => {
+        setFav((curritem) => curritem.filter((item) => item.id !== id));
+    };
+
+    // Favorite Functions
+    const addToFavorite = (id) => {
+        setFavoriteItems((prevFavorites) => !prevFavorites.includes(id)
+            ? [...prevFavorites, id]
+            : prevFavorites
+        );
+    };
+
+    const removeFromFavorite = (id) => {
+        setFavoriteItems((prevFavorites) => prevFavorites.filter((favId) => favId !== id));
+    };
+
+    const isFavorite = (id) => favoriteItems.includes(id);
+
     return (
-        <cartcontext.Provider value={{ cartItems,checkoutItems,addAllToCheckout,getItem,getItemQuantity,addtocheckout ,addtocart,decreaseitem,removeitem}}>
+        <cartcontext.Provider 
+            value={{
+                cartItems,
+                checkoutItems,
+                favoriteItems,
+                fav,
+                addAllToCheckout,
+                getItemQuantity,
+                addtocheckout,
+                addtocart,
+                decreaseitem,
+                removeitem,
+                addtofav,
+                removefav,
+                addToFavorite,
+                removeFromFavorite,
+                isFavorite
+            }}
+        >
+
             {children}
-           
         </cartcontext.Provider>
     );
 };
 
 export default Providorc;
 
-export const useshoppingcart = () =>{
-    return useContext(cartcontext);
-};
-
+export const useshoppingcart = () => useContext(cartcontext);

@@ -13,6 +13,7 @@ import { Fav } from './Component/Fav/Fav'
 import Providorc from './Component/Providorc'
 import Checks from './Component/check-out/Checks'
 import Order from './Component/Order/Order'
+import Favourate from './Component/Favourate/Favourate'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
          < Route path="/offer" element={<Offer/>}/>
          < Route path="/truck" element={<Truck/>}/>
          < Route path="/fav" element={<Fav/>}/>
+         < Route path="/favourate" element={<Favourate/>}/>
          < Route path="/checks" element={<Checks/>}/>
          <Route path="/order" element={<Order/>}/>
         

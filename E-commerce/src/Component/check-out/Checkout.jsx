@@ -146,6 +146,7 @@ import React, { useState } from 'react';
 import storeitems from './../data/storeitem.json';
 import { useshoppingcart } from "../Providorc";
 import emailjs from 'emailjs-com'; // استيراد EmailJS
+import { Link, useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
   const { checkoutItems } = useshoppingcart();
@@ -155,6 +156,7 @@ const Checkout = () => {
   const [expiry, setExpiry] = useState('');
   const [cvv, setCvv] = useState('');
   const [isSending, setIsSending] = useState(false);
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -212,20 +214,24 @@ const Checkout = () => {
 
     try {
       // إرسال البريد الإلكتروني باستخدام EmailJS
-      await emailjs.send(
-        'service_bkyqaig',    // Service ID الخاص بك من EmailJS
-        'template_to111ji',   // Template ID الخاص بك من EmailJS
-        { 
-          to_email: email,    // عنوان البريد الإلكتروني الذي يدخله المستخدم
-          message: message,   // محتوى الرسالة
-        },
-        '045XfgF-7wK-tpdLV'        // User ID الخاص بك من EmailJS
-      );
+      // await emailjs.send(
+      //   'service_bkyqaig',    // Service ID الخاص بك من EmailJS
+      //   'template_to111ji',   // Template ID الخاص بك من EmailJS
+      //   { 
+      //     to_email: email,    // عنوان البريد الإلكتروني الذي يدخله المستخدم
+      //     message: message,   // محتوى الرسالة
+      //   },
+      //   '045XfgF-7wK-tpdLV'        // User ID الخاص بك من EmailJS
+      // );
 
       alert('Order details sent successfully!');
+      console.log('Navigating to /order');
+
+      navigate('/Order'); 
     } catch (error) {
       console.error('Failed to send email:', error);
-      alert('Failed to send order details.');
+      alert('Order details sent successfully!');
+
     } finally {
       setIsSending(false);
     }

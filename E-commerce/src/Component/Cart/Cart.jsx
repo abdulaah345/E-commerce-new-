@@ -99,10 +99,12 @@ const Cart = () => {
                     <img src={logo8} alt="Offer Icon" />
                 </div>
             </div>
-
+         
             <div className="cart-items">
                 {cartItems.map((item) => (
-                    <Cartitem key={item.id} {...item}  />
+
+                    <Cartitem key={item.id} {...item} 
+                    />
                 ))}
             </div>
 

@@ -17,7 +17,7 @@ const Sidebar = () => {
       <Nav.Link  className="d-flex align-items-center" as={NavLink} to="/">
         <FaHome className="icon" /> 
       </Nav.Link>
-      <Nav.Link className="d-flex align-items-center" as={NavLink} to="/bag">
+      <Nav.Link className="d-flex align-items-center" as={NavLink} to="/fav">
         <FaShoppingBag className="icon" />
       </Nav.Link>
       <Nav.Link href="#cart" className="d-flex align-items-center" as={NavLink} to="/cart">
@@ -26,10 +26,7 @@ const Sidebar = () => {
       <Nav.Link href="#offer" className="d-flex align-items-center"as={NavLink} to="/offer">
         <FaTags className="icon" /> 
       </Nav.Link>
-      <Nav.Link href="#truck" className="d-flex align-items-center" as={NavLink} to="/truck">
-        <FaTruck className="icon" /> 
-      </Nav.Link>
-      <Nav.Link href="#fav" className="d-flex align-items-center" as={NavLink} to="/fav">
+      <Nav.Link href="#fav" className="d-flex align-items-center" as={NavLink} to="/favourate">
         <FaHeart className="icon" /> 
       </Nav.Link>
       <Nav.Link href="#fav" className="d-flex align-items-center" as={NavLink} to="/checks">
