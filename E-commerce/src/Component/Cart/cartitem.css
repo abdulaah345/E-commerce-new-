@@ -8,6 +8,7 @@
 
 .cart-page {
     margin-left: 300px;
+    max-width: 88%;
 } 
 
 .cart-banner {
@@ -50,7 +51,7 @@
 
 .cart-icon img {
     width: 400px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-top: -48%;
     z-index: 2; /* لضمان أن الصورة فوق العنصر المنحني */
 }

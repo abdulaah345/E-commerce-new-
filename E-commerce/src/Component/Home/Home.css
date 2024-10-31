@@ -1,15 +1,21 @@
 /* Home.css */
 .home-background {
-    background-image: url('./../../assets/Group66.png');
+    background-image: url('./../../assets/Home2.png');
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  
-  .home, .home-footer {
+    background-position: bottom;
+    height: 100dvh;
+    /* max-width: calc(97.7vw); */
+    /* padding-left: 0.5dvw; */
+    width: 99.1%;
+    /* margin-left: 50px; */
+}
+
+.home,
+.home-footer {
     position: relative;
     z-index: 1;
-  }
+}
+
 .home-title h2 {
     font-family: "Limelight", sans-serif;
 }
@@ -28,6 +34,6 @@
     color: #264653;
 }
 
-.home-footer {
+/* .home-footer {
     background-color: #fffaef;
-}
+} */

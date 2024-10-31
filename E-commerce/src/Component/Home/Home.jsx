@@ -13,8 +13,8 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="container-fluid p-0 " >
-      <img className="img-fluid w-100 " src={Group66} alt="Home background" style={{ height: '100vh' }} />
+    <div className="container-fluid p-0 home-background " >
+      {/* <img className="img-fluid w-100 " src={Group66} alt="Home background" style={{ height: '100vh' }} /> */}
 
       <div className="home d-flex justify-content-around align-items-center py-5">
         <div className="logo text-center">
@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div className="home-title text-center">
           <h2 className="display-1">Set Up Your Style</h2>
-          <p className="lead text-muted">"Step into Style: Your Ultimate Online Shoe Haven!"</p>
+          <p className="lead text-muted">Step into Style: Your Ultimate Online Shoe Haven!</p>
         </div>
         <div className="home-img">
           <img src={photo} alt="Shoe img" className="img-fluid" style={{ maxWidth: '500px', height: 'auto' }} />
@@ -53,7 +53,7 @@ const Home = () => {
         </div>
       </div>
 
-      <footer className="home-footer bg-light text-center py-5 mt-5">
+      <footer className="home-footer text-center py-5 mt-5">
         <h2 className="mb-4">Follow us</h2>
         <div className="icons d-flex justify-content-center gap-3">
           <a href="https://www.facebook.com/" className="text-dark fs-2">

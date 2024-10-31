@@ -7,6 +7,7 @@
 
 .offer {
     margin-left: 200px;
+    max-width: 92%;
 }
 
 .offer-banner {
@@ -103,7 +104,7 @@
 
 .offer-icon img {
     width: 400px;
-    margin-left: 5%;
+    margin-left: 0%;
     margin-top: -48%;
     z-index: 2; /* لضمان أن الصورة فوق العنصر المنحني */
 }
