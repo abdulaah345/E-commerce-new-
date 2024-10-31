@@ -4,7 +4,7 @@ export const cartcontext = createContext({});
 const initialcartitem = localStorage.getItem("shopping") ? JSON.parse(localStorage.getItem("shopping")) : [];
 const inialcheckout = localStorage.getItem("checkout") ? JSON.parse(localStorage.getItem("checkout")) : [];
 const initialFavorites = localStorage.getItem("favorites") ? JSON.parse(localStorage.getItem("favorites")) : [];
-const initialFav = localStorage.getItem("fav") ? JSON.parse(localStorage.getItem("fav")) : [];
+const initialFav = localStorage.getItem("favo") ? JSON.parse(localStorage.getItem("favo")) : [];
 
 const Providorc = ({ children }) => {
     const [cartItems, setCartItems] = useState(initialcartitem);
@@ -24,6 +24,9 @@ const Providorc = ({ children }) => {
     useEffect(() => {
         localStorage.setItem("favorites", JSON.stringify(favoriteItems));
     }, [favoriteItems]);
+    useEffect(() => {
+        localStorage.setItem("favo", JSON.stringify(fav));
+    }, [fav]);
 
     const getItemQuantity = (id) => cartItems.find((item) => item.id === id)?.quantity || 0;
 
