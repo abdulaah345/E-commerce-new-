@@ -25,7 +25,7 @@ const Checks = () => {
             {/* Render Checkout only once */}
             <Checkout checkoutItems={checkoutItems} />
             <Button className="clear-cart-button" onClick={clearCheckout}>
-                        Clear Cart
+                        Clear Checkout
                     </Button>
         </div>
     );
