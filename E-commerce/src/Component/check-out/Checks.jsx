@@ -6,7 +6,7 @@ import Checkout from './Checkout';
 import { Button } from 'react-bootstrap';
 
 const Checks = () => {
-    const { checkoutItems ,clearCart} = useshoppingcart();
+    const { checkoutItems ,clearCheckout} = useshoppingcart();
 
     return (
         <div className="cart-page">
