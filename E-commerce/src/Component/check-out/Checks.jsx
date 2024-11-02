@@ -3,9 +3,10 @@ import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
 import { useshoppingcart } from '../Providorc';
 import Checkout from './Checkout';
+import { Button } from 'react-bootstrap';
 
 const Checks = () => {
-    const { checkoutItems } = useshoppingcart();
+    const { checkoutItems ,clearCart} = useshoppingcart();
 
     return (
         <div className="cart-page">
@@ -23,7 +24,9 @@ const Checks = () => {
 
             {/* Render Checkout only once */}
             <Checkout checkoutItems={checkoutItems} />
-            
+            <Button className="clear-cart-button" onClick={clearCheckout}>
+                        Clear Cart
+                    </Button>
         </div>
     );
 };

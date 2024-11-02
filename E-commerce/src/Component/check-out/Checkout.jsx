@@ -149,7 +149,7 @@ import emailjs from 'emailjs-com'; // استيراد EmailJS
 import { Link, useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
-  const { checkoutItems } = useshoppingcart();
+  const { checkoutItems ,removeitemss} = useshoppingcart();
   const [email, setEmail] = useState('');
   const [cardName, setCardName] = useState('');
   const [cardNumber, setCardNumber] = useState('');
@@ -286,6 +286,9 @@ const Checkout = () => {
                                 <div style={{ width: '80px' }}>
                                   <h5 className="mb-0">${storeItem.price}</h5>
                                 </div>
+                                <button className="clear-cart-button" onClick={() => removeitemss(item.id)}>
+                                 Remove
+                                </button>
                                 <a href="#!" style={{ color: '#cecece' }}>
                                   <i className="fas fa-trash-alt"></i>
                                 </a>
@@ -408,6 +411,7 @@ const Checkout = () => {
                             <span>Checkout <i className="fas fa-long-arrow-alt-right ms-2"></i></span>
                           </div>
                         </button>
+                        
                       </div>
                     </div>
                   </div>

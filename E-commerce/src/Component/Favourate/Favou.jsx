@@ -17,14 +17,7 @@ const Favou = ({id,quantity}) => {
       <h5>Running Shoes</h5>
       <h3>Price</h3>
       <h4>${item.price}</h4>
-      <Button  style={{ border: 'none' ,backgroundColor:"#264653" ,
-    color: "white",
-    width:" 100px",
-    height: "40px",
-    borderRadius: "30px",
-    marginLeft: "40%",
-    
-    cursor: "pointer" }} onClick={() => removefav(item.id)}>Remove</Button>
+      
       
     </div>
   </Col>

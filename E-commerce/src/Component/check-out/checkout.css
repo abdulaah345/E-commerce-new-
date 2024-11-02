@@ -1,1 +1,11 @@
 /* s */
+.clear-cart-button{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-left: 3%;
+}

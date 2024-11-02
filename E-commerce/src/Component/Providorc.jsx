@@ -88,7 +88,10 @@ const Providorc = ({ children }) => {
     const removefav = (id) => {
         setFav((curritem) => curritem.filter((item) => item.id !== id));
     };
-
+    const removeitemss = (id) => {
+        setCheckoutItems((prevItems) => prevItems.filter(item => item.id !== id));
+      };
+      
     // Favorite Functions
     const addToFavorite = (id) => {
         setFavoriteItems((prevFavorites) => !prevFavorites.includes(id)
@@ -105,6 +108,10 @@ const Providorc = ({ children }) => {
     const clearCart = () => {
         setCartItems([]); 
     };
+    const clearCheckout = () => {
+        setCheckoutItems([]); 
+    };
+    
     
     
 
@@ -126,7 +133,8 @@ const Providorc = ({ children }) => {
                 addToFavorite,
                 removeFromFavorite,
                 isFavorite,
-                clearCart
+                clearCart,
+                removeitemss,clearCheckout
                 
             }}
         >
