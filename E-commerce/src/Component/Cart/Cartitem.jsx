@@ -74,7 +74,7 @@ import { Row, Col, Button } from "react-bootstrap";
 import "./../Cart/cartitem.css";
 import { useshoppingcart } from "../Providorc";
 const Cartitem = ({ id, quantity }) => {
-  const { addtocart, decreaseitem } = useshoppingcart();
+  const { addtocart, decreaseitem,removeitem } = useshoppingcart();
 
   const item = storeitems.find((i) => i.id === id);
   if (item == null) return null;
@@ -111,6 +111,10 @@ const Cartitem = ({ id, quantity }) => {
             <Button className="mx-1" onClick={() => addtocart(id)}>
               +
             </Button>
+            <Button className="mx-1" onClick={() => removeitem(id)}>
+             Remove
+            </Button>
+            
           </div>
         </div>
       </Row>

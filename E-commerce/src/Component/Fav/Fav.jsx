@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Button, Alert, InputGroup, Form } from 'react-bootstrap';
 import { FaSearch, FaHeart } from 'react-icons/fa';
-
 import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
 import './../Fav/Fav.css';
@@ -28,13 +27,13 @@ export const Fav = ({ id }) => {
         if (storedFavorites) {
             setFavorites(storedFavorites);
         }
-        
     }, []);
 
     const handleAddToCart = (itemId) => {
         addtocart(itemId);
         setShowAlert(true);
     };
+    
 
     const handleAddToFavorites = (itemId) => {
         let updatedFavorites;

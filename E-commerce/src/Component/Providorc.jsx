@@ -102,6 +102,11 @@ const Providorc = ({ children }) => {
     };
 
     const isFavorite = (id) => favoriteItems.includes(id);
+    const clearCart = () => {
+        setCartItems([]); 
+    };
+    
+    
 
     return (
         <cartcontext.Provider 
@@ -120,7 +125,9 @@ const Providorc = ({ children }) => {
                 removefav,
                 addToFavorite,
                 removeFromFavorite,
-                isFavorite
+                isFavorite,
+                clearCart
+                
             }}
         >
 

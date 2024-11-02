@@ -76,9 +76,10 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import logo8 from './../../assets/sss.png';
 import logo6 from './../../assets/Group 58.png';
-import './../Cart/cartitem.css'
+import './../Cart/cartitem.css';
+
 const Cart = () => {
-    const { cartItems, addAllToCheckout } = useshoppingcart();
+    const { cartItems, addAllToCheckout, clearCart } = useshoppingcart(); // تأكد من إضافة clearCart هنا
     const navigate = useNavigate();
 
     const handelcheckout = () => {
@@ -102,9 +103,7 @@ const Cart = () => {
          
             <div className="cart-items">
                 {cartItems.map((item) => (
-
-                    <Cartitem key={item.id} {...item} 
-                    />
+                    <Cartitem key={item.id} {...item} />
                 ))}
             </div>
 
@@ -113,6 +112,10 @@ const Cart = () => {
                     <Button className="checkout-button" onClick={handelcheckout}>
                         Check Out
                     </Button>
+                    <Button className="clear-cart-button" onClick={clearCart}>
+                        Clear Cart
+                    </Button>
+                    
                 </div>
             )}
         </div>
